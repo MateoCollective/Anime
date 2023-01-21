@@ -1,0 +1,464 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FAFAFA;
+    font-family: Poppins;
+}
+
+body.popup-open {
+    pointer-events: none;
+}
+
+
+:root {
+    --very-dark: #222831;
+    --dark: #282e38;
+    --fade-white: #FAFAFA;
+    --yellow: #4C93FF;
+    --dark-border : #3D3D3D;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+    border-radius: 50px
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4C93FF;
+    border-radius: 50px;
+}
+
+/* Define a class for the dark mode */
+.dark-mode {
+    background-color: var(--very-dark);
+    color: var(--fade-white);
+}
+
+.dark-mode .items {
+    /* Change the background color of items */
+    color: #fff;
+}
+
+.dark-mode input {
+    background-color: var(--dark);
+}
+
+.dark-mode .con {
+    background-color: var(--very-dark);
+}
+
+.dark-mode .popup {
+    background-color: var(--very-dark);
+}
+
+.dark-mode .carousel-container {
+    background-color: var(--dark);
+}
+
+.dark-mode .carousel-info {
+    color: #ffffff;
+}
+
+.dark-mode ::-webkit-scrollbar {
+    background-color: #282e38;
+    width: 10px;
+    height: 5px;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+    background-color: #4C93FF;
+}
+
+.dark-mode .bottom-menu {
+    background-color: var(--dark);
+    border-top: 1px solid var(--dark-border);
+}
+
+.dark-mode nav {
+    background-color: var(--dark);
+    border-bottom: 1px solid var(--dark-border);
+}
+
+.dark-mode .co {
+    color: #fff;
+}
+
+.dark-mode input {
+    background-color: var(--very-dark);
+}
+
+
+nav a:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+    transition: 0.3s;
+    color: #4C93FF;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px 30px 8px 30px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #F2F2F2;
+    color: #000000;
+    border-radius: 50px;
+}
+
+.co {
+    font-size: 10px;
+    color: #000000;
+    text-align: center;
+    margin: 10px;
+}
+
+.co a {
+    color: #4C93FF;
+}
+
+.con {
+    background-color: #FAFAFA;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 5px;
+    position: relative;
+    top: -11px;
+}
+
+.showDataMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.items {
+    /* border: 1px solid black; */
+    height: 200px;
+    width: 100px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 1px;
+}
+
+.items:hover {
+    transition: 0.5s;
+}
+
+
+
+.items img {
+    height: 140px;
+    width: 100px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+.titleText {
+    font-size: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    top: -84px;
+    line-height: 13px;
+    position: relative;
+}
+
+
+
+
+
+.rating {
+    font-size: 8px;
+    display: inline-block;
+    color: #ffffff;
+    position: relative;
+    z-index: 5;
+    top: -87px;
+    padding: 2px 10px;
+    border-radius: 0px 10px 0px 10px;
+    background-color: var(--yellow);
+}
+
+.btm {
+    z-index: 997;
+    position: relative;
+}
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    border-top: 1px solid #f1eeee;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    border-bottom: 1px solid #f1eeee;
+    position: fixed;
+    width: 100%;
+}
+
+.btm {
+    z-index: 997;
+    position: relative;
+}
+.topv {
+    z-index: 996;
+    position: relative;
+}
+.nav-top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f1eeee;
+    position: fixed;
+    width: 100%;
+}
+
+.bottom-menu a {
+    width: 30%;
+    font-size: 18px;
+    color: #7c7c7c;
+    padding: 0.5em;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+
+.episode {
+    font-size: 8px;
+    display: inline-block;
+    color: #ffffff;
+    top: -148px;
+    position: relative;
+    padding: 2px 10px;
+    border-radius: 10px 0px 10px 0px;
+    background-color: var(--dark);
+}
+
+.jumlahTayang {
+    font-size: 9px;
+    font-weight: 500;
+    top: -33px;
+    margin: px 10px;
+    position: relative;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    box-shadow: 8px 6px 0px 200px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 8px 6px 0px 200px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 6px 0px 200px rgba(0,0,0,0.75);
+    z-index: 999;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.popup img {
+    height: 140px;
+    width: 100px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    background-color: #4C93FF;
+    border-radius: 10px;
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+
+
+.popup h2 {
+    margin-top: 0;
+    margin: 15px;
+    font-size: 12px;
+}
+
+.popup p {
+    margin: 10px 15px;
+    font-size: 10px;
+    
+}
+
+.popup-bts {
+    width: 250px;
+    height: 50px;
+    overflow: auto; /* mengaktifkan scrollbar pada sumbu y (vertikal) */
+    margin-left: 50px;
+}
+
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.cat {
+    margin: 25px;
+    font-weight: 600; 
+    font-size: 15px;
+}
+
+.theme{
+    border-radius: 50px;
+    display: inline-block;
+    padding: 5px 11px;
+    margin-left: 10px;
+    background-color: #4C93FF;
+    font-size: 15px;
+}
+
+.text-container {
+    max-height: 100px; /* batas maksimal tinggi untuk elemen teks */
+    overflow: hidden; /* menyembunyikan teks yang melebihi batas */
+}
+
+
+button {
+    background-color: #4C93FF;
+    border: none;
+    padding: 10px 50px;
+    margin: 20px;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-container {
+    height: 140px;
+    margin: 70px 20px 20px 20px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+
+.carousel-container img {
+    float: left;
+    position: relative;
+    object-fit: cover;
+    height: 140px;
+    width: 100px;
+    margin-right: 15px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+
+.carousel-info {
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 9px;
+    top: -14px;
+    position: relative;
+}
+
+.carousel-info p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 80%;
+}
+
+.carousel-info h3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.errorHeading {
+
+    text-align: center;
+    color: rgb(106, 48, 48);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.errorImg {
+    display: block;
+    margin: auto;
+    width: 10%;
+}
+
+#error {
+    margin-top: 50px;
+}
+
+@media (max-width: 500px) {
+    /* CSS untuk tampilan mobile */
+    
+}
+
+
+@media (min-width: 769px) {
+    /* CSS untuk tampilan desktop */
+    .container-web {
+        width: 30%;
+        margin: auto;
+    }
+    .input-container {
+        width: 30%;
+    }
+    .bottom-menu {
+        width: 30%;
+        margin: auto;
+    }
+    .topv {
+        
+    }
+    .nav-top{
+        margin: auto;
+        width: 29%;
+    }
+    .input-container {
+        width: 100%;
+        margin: 10px;
+        top: 0;
+    }
+    .items {
+        margin-right: -4px;
+        margin: 5px;
+    }
+    
+}

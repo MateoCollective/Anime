@@ -1,0 +1,67 @@
+.card {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 250px;
+    width: 300px;
+    height: 250px;
+
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.card-banner {
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    z-index: -5;
+}
+
+.card-banner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.card-banner img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card-content {
+    padding: 1rem;
+    background: white;
+    flex: 1;
+
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+
+    max-height: 100px;
+}
+
+.anime-cover {
+    width: 40%;
+    height: auto;
+}
+
+.text {
+    height: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: .4rem;
+}
+
+.text h3 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
